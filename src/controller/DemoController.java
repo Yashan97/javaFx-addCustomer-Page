@@ -1,0 +1,17 @@
+package controller;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
+
+public class DemoController {
+
+    public TextField txtId;
+    public TextField txtEmail;
+    public TextField txtName;
+    public TextField txtNumber;
+    public TextField txtAddress;
+
+    public void addBtn(ActionEvent actionEvent) {
+
+    }
+}
