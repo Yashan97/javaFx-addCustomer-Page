@@ -11,7 +11,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/DemoFxml.fxml"))));
+        stage.setTitle("Customer Registration Main Forme ");
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/mainViewform.fxml"))));
         stage.show();
     }
 }

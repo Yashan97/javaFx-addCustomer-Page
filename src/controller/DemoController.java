@@ -37,6 +37,7 @@ public class DemoController {
 
             Customer customer = new Customer(id,name,email,address,number);
             customersList.add(customer);
+            loadTable();
 
 
     }
@@ -50,9 +51,7 @@ public class DemoController {
     }
 
     public void btnReload(ActionEvent actionEvent) {
-//        customersList.forEach(customer -> {
-//            System.out.println(customer);
-//        });
+
         loadTable();
     }
     private void loadTable(){
