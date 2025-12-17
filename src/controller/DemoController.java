@@ -8,6 +8,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import model.Customer;
 
 import java.util.ArrayList;
@@ -26,7 +27,6 @@ public class DemoController {
     public TableColumn ColEmail;
     public TableColumn ColNumber;
 
-    ArrayList<Customer>customersList = new ArrayList<>();
 
     public void addBtn(ActionEvent actionEvent) {
             String id = txtId.getText();
@@ -36,7 +36,7 @@ public class DemoController {
             int number = Integer.parseInt(txtNumber.getText());
 
             Customer customer = new Customer(id,name,email,address,number);
-            customersList.add(customer);
+            AllControllers.addCustomer(customer);
             loadTable();
 
 
@@ -62,9 +62,14 @@ public class DemoController {
         ColNumber.setCellValueFactory(new PropertyValueFactory<>("number"));
 
         ObservableList<Customer> customerObservableList = FXCollections.observableArrayList();
-        customersList.forEach(customer -> {
+        AllControllers.customerArrayList.forEach(customer -> {
             customerObservableList.add(customer);
         });
         tblAddCustomer.setItems(customerObservableList);
+    }
+
+    public void btnExit(ActionEvent actionEvent) {
+        Stage stage = new Stage();
+        stage.toBack();
     }
 }

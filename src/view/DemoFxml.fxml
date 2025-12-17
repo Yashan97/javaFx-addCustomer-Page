@@ -22,7 +22,7 @@
       <TextField fx:id="txtName" layoutX="227.0" layoutY="100.0" prefHeight="26.0" prefWidth="191.0" promptText="User Name" />
       <TextField fx:id="txtNumber" layoutX="227.0" layoutY="138.0" prefHeight="26.0" prefWidth="191.0" promptText="Number" />
       <TextField fx:id="txtAddress" layoutX="432.0" layoutY="100.0" prefHeight="26.0" prefWidth="191.0" promptText="Address" />
-      <Button layoutX="444.0" layoutY="139.0" mnemonicParsing="false" onAction="#addBtn" prefHeight="26.0" prefWidth="94.0" text="Add" />
+      <Button layoutX="444.0" layoutY="139.0" mnemonicParsing="false" onAction="#addBtn" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #00FF00;" text="Add" />
       <Button layoutX="544.0" layoutY="140.0" mnemonicParsing="false" onAction="#btnClear" prefHeight="25.0" prefWidth="77.0" text="Clear" />
       <TableView fx:id="tblAddCustomer" layoutX="30.0" layoutY="181.0" prefHeight="222.0" prefWidth="588.0">
         <columns>
@@ -34,5 +34,6 @@
         </columns>
       </TableView>
       <Button layoutX="535.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnReload" prefHeight="26.0" prefWidth="84.0" text="Reload" />
+      <Button layoutX="433.0" layoutY="418.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #FF4500;" text="Exit" />
    </children>
 </AnchorPane>

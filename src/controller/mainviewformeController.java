@@ -16,6 +16,10 @@ public class mainviewformeController {
         stage.show();
     }
 
-    public void btnSearchCustomer(ActionEvent actionEvent) {
+    public void btnSearchCustomer(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Add Customer Forme");
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/searchCustomerFormeView.fxml"))));
+        stage.show();
     }
 }
