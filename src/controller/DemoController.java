@@ -28,7 +28,11 @@ public class DemoController {
     public TableColumn ColNumber;
 
 
+
     public void addBtn(ActionEvent actionEvent) {
+
+        try{
+
             String id = txtId.getText();
             String name = txtName.getText();
             String address = txtAddress.getText();
@@ -39,6 +43,10 @@ public class DemoController {
             AllControllers.addCustomer(customer);
             loadTable();
 
+
+        }catch (NumberFormatException e){
+            System.out.println("add valid number");
+        }
 
     }
 
@@ -72,4 +80,6 @@ public class DemoController {
         Stage stage = new Stage();
         stage.toBack();
     }
+
+
 }

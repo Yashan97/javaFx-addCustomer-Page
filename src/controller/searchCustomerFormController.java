@@ -23,4 +23,17 @@ public class searchCustomerFormController {
         ));
     }
 
+    public void btnUpdate(ActionEvent actionEvent) {
+        int number = Integer.parseInt(txtSearchNumber.getText());
+        int index = AllControllers.searchCustomerByNumber(number);
+        String name = txtName.getText();
+        String email = txtEmail.getText();
+        String address = txtAddress.getText();
+        int newNumber = Integer.parseInt(txtNumber.getText());
+        AllControllers.customerArrayList.get(index).setName(name);
+        AllControllers.customerArrayList.get(index).setEmail(email);
+        AllControllers.customerArrayList.get(index).setAddress(address);
+        AllControllers.customerArrayList.get(index).setNumber(newNumber);
+
+    }
 }

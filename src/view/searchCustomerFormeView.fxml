@@ -7,7 +7,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.searchCustomerFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#215f99" height="69.0" stroke="BLACK" strokeType="INSIDE" width="648.0" />
@@ -24,7 +23,7 @@
       <TextField fx:id="txtAddress" layoutX="15.0" layoutY="182.0" prefHeight="25.0" prefWidth="170.0" promptText="Address" />
       <TextField fx:id="txtNumber" layoutX="200.0" layoutY="182.0" prefHeight="25.0" prefWidth="170.0" promptText="Number" />
       <Button layoutX="541.0" layoutY="346.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Clear" />
-      <Button layoutX="461.0" layoutY="346.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Update" />
-      <Button layoutX="382.0" layoutY="346.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Delete" />
+      <Button layoutX="451.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #00FFFF;" text="Update" />
+      <Button layoutX="374.0" layoutY="346.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Delete" />
    </children>
 </AnchorPane>

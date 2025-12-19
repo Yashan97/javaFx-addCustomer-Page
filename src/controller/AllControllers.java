@@ -20,4 +20,13 @@ public class AllControllers {
         }
         return -1;
     }
+    public static String generateId(){
+        if (customerArrayList.size()==0){
+            return "B001";
+        }
+        Customer lastCustomer = customerArrayList.get(customerArrayList.size()-1);
+        String lastID = lastCustomer.getId();
+        int lastNumber = Integer.parseInt(lastID.substring(1));
+        return String.format ("B%04d",lastNumber+1);
+    }
 }
